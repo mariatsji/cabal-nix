@@ -30,7 +30,7 @@ executable cabal-nix
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
     build-depends:
-        base ^>=4.15.0.0
+      base >= 4.3 && < 5
       , text >= 1.2.4.1
     hs-source-dirs:   app
     default-language: Haskell2010

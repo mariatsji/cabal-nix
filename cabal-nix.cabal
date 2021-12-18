@@ -1,4 +1,4 @@
-cabal-version:      2.4
+cabal-version:      3.0
 name:               cabal-nix
 version:            0.1.0.0
 
@@ -19,7 +19,9 @@ maintainer:         sjur.millidahl@finn.no
 -- A copyright notice.
 -- copyright:
 -- category:
-extra-source-files: CHANGELOG.md
+extra-source-files:
+    CHANGELOG.md
+    README.md
 
 executable cabal-nix
     main-is:          Main.hs
@@ -29,8 +31,6 @@ executable cabal-nix
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:
-      base >= 4.3 && < 5
-      , text >= 1.2.4.1
+    build-depends:    base ^>=4.15.0.0, text
     hs-source-dirs:   app
     default-language: Haskell2010
